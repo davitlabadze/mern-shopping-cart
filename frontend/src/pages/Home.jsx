@@ -20,7 +20,15 @@ const Home = () => {
             ) : error ? (
                 <h2>{error}</h2>
             ) : (
-                products.map((product) => <Product key={product._id} />)
+                products.map((product) => <Product
+                    key={product._id}
+                    productId={product._id}
+                    name={product.name}
+                    price={product.price}
+                    desription={product.desription}
+                    imageUrl={product.imageUrl}
+
+                />)
             )}
         </div>
     )
