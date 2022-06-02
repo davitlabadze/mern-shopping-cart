@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom"
 import { MenuIcon, ShoppingCartIcon } from '@heroicons/react/outline'
-
+import { useSelector } from "react-redux"
 const Navbar = ({ eventSide }) => {
+    const cart = useSelector(state => state.cart);
+    const { cartItems } = cart;
+
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) => qty + Number(item.qty), 0)
+    }
+
+
     return (
         <div className="p-12 bg-white">
             <div className="container flex flex-wrap items-center justify-between w-full mx-auto ">
@@ -15,7 +23,7 @@ const Navbar = ({ eventSide }) => {
                         <Link to="/cart" className="flex" >
                             <ShoppingCartIcon className="flex w-6 h-6" />
                             Cart
-                            <span className="ml-1">0</span>
+                            <span className="ml-1">{getCartCount()}</span>
                         </Link>
                     </li>
                     <li className="ml-4">
