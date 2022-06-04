@@ -29,7 +29,7 @@ const products = [
     },
     {
         name: "IMac 24",
-        description:"MacBook Pro 15-inch",
+        description:"IMac 24",
         price:1299,
         countInStock:20,
         imageUrl:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-imac-24-202108?wid=490&hei=400&fmt=jpeg&qlt=95&.v=1625868688000",
