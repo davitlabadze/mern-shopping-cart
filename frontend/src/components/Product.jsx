@@ -1,7 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { addToCart } from '../redux/actions/cartActions';
+import { useDispatch } from "react-redux";
+
+
 
 const Product = ({ imageUrl, name, price, productId }) => {
+    const dispatch = useDispatch();
+
+    const addToCartHandler = () => {
+        dispatch(addToCart(productId, 1));
+    }
     return (
         <div className="duration-300 scale-95 border border-gray-100 rounded-lg shadow-lg hover:scale-100 w-80 h-96 hover:shadow-xl">
             <h1 className="mt-2 text-2xl">{name}</h1>
@@ -10,7 +19,7 @@ const Product = ({ imageUrl, name, price, productId }) => {
             </Link>
             <div className="flex items-center justify-between px-12">
                 <h4>${price}</h4>
-                <button className="p-2 text-white bg-blue-600 rounded-md hover:bg-blue-500">Add to Cart</button>
+                <button onClick={addToCartHandler} className="p-2 text-white bg-blue-600 rounded-md hover:bg-blue-500">Add to Cart</button>
             </div>
         </div>
     )
