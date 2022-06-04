@@ -19,11 +19,11 @@ const Navbar = ({ eventSide }) => {
                     </h2>
                 </div>
                 <ul className="hidden lg:flex lg:items-center lg:flex-shrink-0">
-                    <li className="rounded ">
+                    <li className="p-2 rounded hover:bg-gray-400">
                         <Link to="/cart" className="flex" >
                             <ShoppingCartIcon className="flex w-6 h-6" />
                             Cart
-                            <span className="ml-1">{getCartCount()}</span>
+                            <span className="w-6 h-6 ml-1 text-center text-white bg-pink-600 rounded-xl">{getCartCount()}</span>
                         </Link>
                     </li>
                     <li className="ml-4">
