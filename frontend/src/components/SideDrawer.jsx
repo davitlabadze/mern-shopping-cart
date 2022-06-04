@@ -16,7 +16,7 @@ const SideDrawer = ({ show, eventSide }) => {
                     <Link to="/cart" className="flex justify-center w-full" >
                         <ShoppingCartIcon className="flex w-6 h-6" />
                         Cart
-                        <span className="ml-1">{getCartCount()}</span>
+                        <span className="w-6 h-6 ml-1 text-white bg-pink-600 rounded-xl">{getCartCount()}</span>
                     </Link>
                 </li>
                 <li className="p-4 mt-6 rounded hover:bg-pink-600">
