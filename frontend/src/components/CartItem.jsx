@@ -9,11 +9,15 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
                 src={item.imageUrl}
                 alt={item.name}
             />
-            <Link to={`/product/${item.product}`}>
-                <p>{item.name}</p>
+            <div className="mr-2 text-blue-800 w-36 text-cente">
+                <Link to={`/product/${item.product}`}>
+                    <p>{item.name}</p>
 
-            </Link>
-            <p>${item.price}</p>
+                </Link>
+            </div>
+            <div className="text-center ">
+                <p>${item.price}</p>
+            </div>
             <select className="w-12 h-8"
                 value={item.qty}
                 onChange={(e) => qtyChangeHandler(item.product, e.target.value)}>
@@ -25,7 +29,7 @@ const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
             <button onClick={() => removeHandler(item.product)}>
                 <TrashIcon className="w-6 h-6 text-gray-500 hover:text-gray-600" />
             </button>
-        </div>
+        </div >
     )
 }
 
