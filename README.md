@@ -5,8 +5,8 @@
 * [ Prerequisites ](#pre)
 * [ Dependencies ](#dependencies)
 * [ Install ](#insatll)
-* [ Run the app ](#run)
 * [ Import information into a database ](#db)
+* [ Run the app ](#run)
 
 <a name="about"></a>
 
