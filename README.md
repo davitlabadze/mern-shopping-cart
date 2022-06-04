@@ -91,6 +91,8 @@ npm install
 ```bash
 npm run db:seed
 ```
+<a name="run"></a>
+
 # `Run The App`
 
 ### `Run full app`
