@@ -33,7 +33,6 @@ Shopping Cart is an online store where you can find the product you want to add 
 
 | name  | version |
 | ------------- | ------------- |
-| cors  | ^2.8.5  |
 | axios  | ^0.27.2  |
 | redux  | ^4.2.0  |
 | react-redux  | ^8.0.2  |
