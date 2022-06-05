@@ -58,21 +58,6 @@ Download [ZIP](https://github.com/davitlabadze/mern-shopping-cart/archive/refs/h
 https://github.com/davitlabadze/mern-shopping-cart.git
 ```
 
-
-
-## `Setup Frontend`
-Go to the frontend directory Use this command `cd ../frontend`
-
-#### `Install Node modules`
-
-```bash
-npm install
-```
-
-## `Setup Backend`
-
-Return to the Main Directory Use this command `cd ../`
-
 #### `Copy .env file`
 ```bash
 cp .env.example .env
@@ -81,7 +66,7 @@ cp .env.example .env
 #### `Install Node modules`
 
 ```bash
-npm install
+npm i && npm i frontend/
 ```
 <a name="db"></a>
 
